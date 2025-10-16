@@ -4,11 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Logo-->
+    <link rel="shortcut icon" href="assets/logo.png">
+
     <!--css-->
     <link rel="stylesheet" href="styles.css">
+
+    <!--font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Tailwind cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--DaisyUi cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!--Font Hind siliguri-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
     <title>English Janala</title>
 </head>
 <body>
-    
+    <header class="">
+        <!--Navbar-->
+        <nav class="bg-[#EDF7FF] py-4 px-15 flex items-center justify-between">
+            <div class="flex gap-0.5 items-center">
+                <h2 class="font-bold">English</h2>
+                <img src="assets/logo.png">
+                <h2 class="font-semibold font_bangla">জানালা</h2>
+            </div>
+
+            <div class="flex gap-2">
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-circle-question"></i>  FAQ</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Learn</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-right-from-bracket"></i>  Logout</a></button>
+            </div>
+        </nav>
+
+        <!--Banner-->
+        <div class="flex items-center justify-between px-15">
+            <div class=" grid grid-cols-1">
+                <h2 class="font-bold text-6xl"><span class="text-[#00bCFF]">English</span> is Easy!!</h2>
+                <p class="font_bangla font-semibold my-5">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা 
+                    <br>আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে 
+                    <br>যাবে অন্য একটি Level এ</p>
+                <input type="text" placeholder="Enter Your Name" class="input" />
+                <input type="text" placeholder="********" class="input my-5" />
+                <button class="btn btn-primary"><a href="">Get Started</a></button>
+            </div>
+
+            <div class=" size-150">
+                <img src="assets/hero-student.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+        <!--Lessons-->
+        <div class="items-center text-center mt-60 mb-[-90px]">
+            <h2 class="font-bold text-4xl mb-12"><span class="text-[#00bCFF]">Let's</span> Learn Vocabularies</h2>
+            <div class="grid grid-cols-7 gap-3 px-35">
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 1</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 2</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 3</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 4</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 5</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 6</a></button>
+                <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 7</a></button>
+            </div>
+        </div>
+
+        <!--select lessons-->
+        <div class="p-30">
+            <div class="bg-gray-100 py-17 px-15 rounded-xl text-center">
+                <p class="text-xs text-gray-500 mb-4">আপনি এখনো কোন Lesson Select করেন</p>
+                <h2 class="text-3xl font-semibold">একটি Lesson Select করুন।</h2>
+            </div>
+        </div>
+    </main>
+    <hr class="shadow-gray-200 shadow border-1 border-gray-300">
+    <footer class="px-15 py-9 flex items-center justify-between">
+        <div class="">
+            <div class="flex gap-0.5 items-center">
+                <h2 class="font-bold">English</h2>
+                <img src="assets/logo.png">
+                <h2 class="font-semibold font_bangla">জানালা</h2>
+            </div>
+            <h2 class="font_bangla text-l font-semibold my-3">ইংরেজি শিখুন সহজে</h2>
+            <p class=" text-xs">Providing ED-Tech Applications since 2025</p>
+        </div>
+        <div class="">
+            <h2 class="text-gray-500 font-semibold text-xs">FOLLOW US</h2>
+            <div class="flex gap-2 mt-3">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
