@@ -26,6 +26,13 @@ const load_word_detail = (id) => {
     .then(dtl_json => display_word_details(dtl_json.data))
 }
 
+//speach
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
 const create_syn = (arr) => {
     const syn_elements = arr.map((elem) => `<span class="btn btn-soft btn-primary">${elem}</span>`)
     return syn_elements.join(" ")
@@ -92,7 +99,7 @@ const display_level_word = (words) => {
                 <h2 class="font_bangla text-gray-600 font-bold">${word.meaning ? word.meaning : "Meaning not found"} /${word.pronunciation ? word.pronunciation : "pronunciation not found"}</h2>
                 <div class="flex items-center justify-between mt-10">
                     <i onclick="load_word_detail(${word.id})" class="fa-solid fa-circle-info"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <i onclick="pronounceWord('${word.word}')" class="fa-solid fa-volume-high"></i>
                     </div>
                 </div>
         `
