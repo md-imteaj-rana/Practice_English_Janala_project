@@ -7,3 +7,8 @@
 .font_bangla{
     font-family: "Hind Siliguri", sans-serif;
 }
+
+.active_btn{
+    background-color: #422AD5;
+    color: white;
+}

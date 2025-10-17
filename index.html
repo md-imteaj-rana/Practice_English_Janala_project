@@ -67,6 +67,7 @@
         <div class="items-center text-center mt-60 mb-[-90px]">
             <h2 class="font-bold text-4xl mb-12"><span class="text-[#00bCFF]">Let's</span> Learn Vocabularies</h2>
             <div class="grid grid-cols-7 gap-3 px-35" id="lesson_container">
+                
                 <!-- <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 2</a></button>
                 <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 1</a></button>
                 <button class="btn btn-soft btn-primary border-2 border-blue-700"><a href=""><i class="fa-solid fa-book-open"></i>  Lesson - 3</a></button>
@@ -78,13 +79,84 @@
         </div>
 
         <!--select lessons-->
-        <div class="p-30">
+        <!-- <div class="p-30">
             <div class="bg-gray-100 py-17 px-15 rounded-xl text-center">
                 <p class="text-xs text-gray-500 mb-4">আপনি এখনো কোন Lesson Select করেন</p>
                 <h2 class="text-3xl font-semibold">একটি Lesson Select করুন।</h2>
             </div>
+        </div> -->
+
+        <!--Loading-->
+        <section class="flex justify-center items-center">
+            <span id="spinner" class="loading loading-infinity loading-xl hidden"></span>
+        </section>
+
+        <!--Search-->
+        <section class="flex justify-center mt-35">
+            <div class="join">
+            <div>
+                <label class="input validator join-item">
+                
+                <input id="search_txt" type="text" placeholder="Search"/>
+                </label>
+            </div>
+            <button id="btn_search" class="btn btn-primary btn-solid join-item">Search</button>
+            </div>
+        </section>
+
+        <!--words-->
+        <div class=" bg-gray-100 m-30 rounded-xl p-5 grid grid-cols-1 gap-2 md:grid-cols-3" id="word_container">
+            <!--select lessons-->
+                <div class=" col-span-3">
+                    <div class="bg-gray-100 py-17 px-15 rounded-xl text-center">
+                        
+                        <p class="text-xs text-gray-500 mb-4">আপনি এখনো কোন Lesson Select করেন</p>
+                        <h2 class="text-3xl font-semibold">একটি Lesson Select করুন।</h2>
+                    </div>
+                </div>
+
+            <!-- <div class="text-center px-12 py-5 rounded-xl bg-white">
+                <h2 class="font-bold text-2xl">Eager</h2>
+                <p class="text-xs font-bold my-3">Meaning /Pronounciation</p>
+                <h2 class="font_bangla text-gray-600 font-bold">"আগ্রহী / ইগার"</h2>
+                <div class="flex items-center justify-between mt-10">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+            </div> -->
         </div>
 
+        <!--Modal-->
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+         -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <!-- <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p> -->
+            <div id="details_container" class="">
+                <!-- <div class="">
+                    <h2 class="font-bold text-2xl">Eager(<i class="fa-solid fa-microphone-lines"></i>: eager)</h2>
+                    <h2 class="font-bold mt-3">Meaning</h2>
+                    <p class="font_bangla font-bold text-gray-600 my-1">bangla</p>
+                    <h2 class="font-bold mt-3">Example</h2>
+                    <p class="font-bold text-gray-600 my-1">bangla</p>
+                    <h2 class="font-semibold font_bangla mt-3">সমার্থক শব্দ গুলো</h2>
+                    <div class="flex items-center gap-2">
+                        <button class="btn btn-soft btn-primary">Primary</button>
+                        <button class="btn btn-soft btn-primary">Primary</button>
+                        <button class="btn btn-soft btn-primary">Primary</button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
 
         <!--FAQ-->
         <div class="text-center grid grid-cols-1">
